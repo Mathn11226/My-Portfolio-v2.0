@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathankumar | Data Storyteller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+              display: ['Fredoka', 'sans-serif'],
+            },
+            colors: {
+              magical: {
+                50: '#f0fdfa', // Teal-ish white
+                100: '#ccfbf1',
+                200: '#99f6e4',
+                300: '#5eead4',
+                400: '#2dd4bf',
+                500: '#14b8a6', // Primary Teal
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59',
+                900: '#134e4a',
+                950: '#042f2e',
+              },
+              story: {
+                dark: '#020617', // Slate 950 - Deep, rich dark
+                light: '#ffffff',
+                accent: '#8b5cf6', // Violet Accent for contrast
+                secondary: '#f43f5e' // Rose
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #14b8a6; 
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2dd4bf; 
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.16?external=react,react-dom,three",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.99.0?external=react,react-dom,three,@react-three/fiber",
+    "postprocessing": "https://esm.sh/postprocessing@6.35.0?external=three",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@2.16.0?external=react,react-dom,three,@react-three/fiber,postprocessing",
+    "framer-motion": "https://esm.sh/framer-motion@10.18.0?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.330.0?external=react,react-dom"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-magical-50 text-slate-800 dark:bg-story-dark dark:text-gray-100 transition-colors duration-500">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
